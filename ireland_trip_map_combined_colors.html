@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5f2693c622fdf1f6afa7ec56c15dd056 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5f2693c622fdf1f6afa7ec56c15dd056" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5f2693c622fdf1f6afa7ec56c15dd056 = L.map(
+                "map_5f2693c622fdf1f6afa7ec56c15dd056",
+                {
+                    center: [53.3331, -6.2489],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8ac4e4089b2734ed76d710d0a4361518 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var marker_a7921f217a6c229083a59018dd22f9e5 = L.marker(
+                [53.3331, -6.2489],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_3c60fbf731cb13cca630ffea2891cb52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7921f217a6c229083a59018dd22f9e5.setIcon(icon_3c60fbf731cb13cca630ffea2891cb52);
+        
+    
+        var popup_86fbdc5e1bcc034ef3839f1981994b70 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79ef90581b19e9e42fe12a15e7016cbb = $(`<div id="html_79ef90581b19e9e42fe12a15e7016cbb" style="width: 100.0%; height: 100.0%;"><a href="https://www.visitdublin.com/" target="_blank">Dublin</a></div>`)[0];
+            popup_86fbdc5e1bcc034ef3839f1981994b70.setContent(html_79ef90581b19e9e42fe12a15e7016cbb);
+        
+
+        marker_a7921f217a6c229083a59018dd22f9e5.bindPopup(popup_86fbdc5e1bcc034ef3839f1981994b70)
+        ;
+
+        
+    
+    
+            marker_a7921f217a6c229083a59018dd22f9e5.bindTooltip(
+                `<div>
+                     Dublin (Day 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd0194f6435d257692e06777e5888009 = L.marker(
+                [53.343, -6.2546],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_7c277537c6e77eae3c66146b741638c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bd0194f6435d257692e06777e5888009.setIcon(icon_7c277537c6e77eae3c66146b741638c9);
+        
+    
+        var popup_8f0f607e19dd88caaac483b69f3f474f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a4869e3ef706f9759a1b78f768c9318 = $(`<div id="html_8a4869e3ef706f9759a1b78f768c9318" style="width: 100.0%; height: 100.0%;"><a href="https://www.tcd.ie/visitors/book-of-kells/" target="_blank">Trinity College & Book of Kells</a></div>`)[0];
+            popup_8f0f607e19dd88caaac483b69f3f474f.setContent(html_8a4869e3ef706f9759a1b78f768c9318);
+        
+
+        marker_bd0194f6435d257692e06777e5888009.bindPopup(popup_8f0f607e19dd88caaac483b69f3f474f)
+        ;
+
+        
+    
+    
+            marker_bd0194f6435d257692e06777e5888009.bindTooltip(
+                `<div>
+                     Trinity College & Book of Kells (Day 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76eaebf0ec302bc949b5d671760a30ee = L.marker(
+                [53.3459, -6.2644],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_718ad1c4a5a734f4d28ceba9e5110850 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_76eaebf0ec302bc949b5d671760a30ee.setIcon(icon_718ad1c4a5a734f4d28ceba9e5110850);
+        
+    
+        var popup_987fde44173163b8ab32ea061ed376a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a1ab9a7f230f89a9d3f1b3d96067ea5 = $(`<div id="html_3a1ab9a7f230f89a9d3f1b3d96067ea5" style="width: 100.0%; height: 100.0%;"><a href="https://www.ireland.com/en-us/destinations/republic-of-ireland/dublin/dublin-city/articles/temple-bar/" target="_blank">Temple Bar</a></div>`)[0];
+            popup_987fde44173163b8ab32ea061ed376a7.setContent(html_3a1ab9a7f230f89a9d3f1b3d96067ea5);
+        
+
+        marker_76eaebf0ec302bc949b5d671760a30ee.bindPopup(popup_987fde44173163b8ab32ea061ed376a7)
+        ;
+
+        
+    
+    
+            marker_76eaebf0ec302bc949b5d671760a30ee.bindTooltip(
+                `<div>
+                     Temple Bar (Day 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19f904048bab4836c9b373cf60b2ffce = L.marker(
+                [53.3459, -6.2733],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_f198d06e5666fc16ca80e8af2ffa7039 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_19f904048bab4836c9b373cf60b2ffce.setIcon(icon_f198d06e5666fc16ca80e8af2ffa7039);
+        
+    
+        var popup_7aa186437f211a63d9e7399a80f9ae8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7245cb107b0c6623df5f897ee5e91708 = $(`<div id="html_7245cb107b0c6623df5f897ee5e91708" style="width: 100.0%; height: 100.0%;"><a href="https://www.brazenhead.com/" target="_blank">The Brazen Head Pub</a></div>`)[0];
+            popup_7aa186437f211a63d9e7399a80f9ae8c.setContent(html_7245cb107b0c6623df5f897ee5e91708);
+        
+
+        marker_19f904048bab4836c9b373cf60b2ffce.bindPopup(popup_7aa186437f211a63d9e7399a80f9ae8c)
+        ;
+
+        
+    
+    
+            marker_19f904048bab4836c9b373cf60b2ffce.bindTooltip(
+                `<div>
+                     The Brazen Head Pub (Day 1)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_50cc3ec7d882362df278b0d9910ca741 = L.marker(
+                [52.6541, -7.2448],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_2c6385910d30558f744bf6660eaf962e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_50cc3ec7d882362df278b0d9910ca741.setIcon(icon_2c6385910d30558f744bf6660eaf962e);
+        
+    
+        var popup_7b52805be80d6baaf92f332989686ae3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d152f4609973b61d41ca49873b48ad4 = $(`<div id="html_8d152f4609973b61d41ca49873b48ad4" style="width: 100.0%; height: 100.0%;"><a href="https://visitkilkenny.ie/" target="_blank">Kilkenny</a></div>`)[0];
+            popup_7b52805be80d6baaf92f332989686ae3.setContent(html_8d152f4609973b61d41ca49873b48ad4);
+        
+
+        marker_50cc3ec7d882362df278b0d9910ca741.bindPopup(popup_7b52805be80d6baaf92f332989686ae3)
+        ;
+
+        
+    
+    
+            marker_50cc3ec7d882362df278b0d9910ca741.bindTooltip(
+                `<div>
+                     Kilkenny (Day 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dfb32d4d834c4257d32d335b8bc909f4 = L.marker(
+                [52.65, -7.249],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_3fe253af444347518da0ff1d93f7337b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dfb32d4d834c4257d32d335b8bc909f4.setIcon(icon_3fe253af444347518da0ff1d93f7337b);
+        
+    
+        var popup_3636b0e528425afcc6a0a7813ac7d36a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_360c3e1e57fbce93163ccbbde9aacea0 = $(`<div id="html_360c3e1e57fbce93163ccbbde9aacea0" style="width: 100.0%; height: 100.0%;"><a href="https://kilkennycastle.ie/" target="_blank">Kilkenny Castle</a></div>`)[0];
+            popup_3636b0e528425afcc6a0a7813ac7d36a.setContent(html_360c3e1e57fbce93163ccbbde9aacea0);
+        
+
+        marker_dfb32d4d834c4257d32d335b8bc909f4.bindPopup(popup_3636b0e528425afcc6a0a7813ac7d36a)
+        ;
+
+        
+    
+    
+            marker_dfb32d4d834c4257d32d335b8bc909f4.bindTooltip(
+                `<div>
+                     Kilkenny Castle (Day 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fb05ff445b4c797848a999b1f4a8a64 = L.marker(
+                [52.6538, -7.252],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_19260c9f4a81a97b991ef36628160b53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0fb05ff445b4c797848a999b1f4a8a64.setIcon(icon_19260c9f4a81a97b991ef36628160b53);
+        
+    
+        var popup_a728e17161472d574e78839a7112f94a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c57d151c10efb22824a67fbafc5ad250 = $(`<div id="html_c57d151c10efb22824a67fbafc5ad250" style="width: 100.0%; height: 100.0%;"><a href="https://www.smithwicksexperience.com/" target="_blank">Smithwick’s Experience</a></div>`)[0];
+            popup_a728e17161472d574e78839a7112f94a.setContent(html_c57d151c10efb22824a67fbafc5ad250);
+        
+
+        marker_0fb05ff445b4c797848a999b1f4a8a64.bindPopup(popup_a728e17161472d574e78839a7112f94a)
+        ;
+
+        
+    
+    
+            marker_0fb05ff445b4c797848a999b1f4a8a64.bindTooltip(
+                `<div>
+                     Smithwick’s Experience (Day 2)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1256f238dc2016386d742973c042de21 = L.marker(
+                [51.85, -8.2945],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_93389c39eccf535ab4f5175122258689 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1256f238dc2016386d742973c042de21.setIcon(icon_93389c39eccf535ab4f5175122258689);
+        
+    
+        var popup_4af6ea94038b63112c86dc95a1dcd4d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46f52b49ed27a87cd4ae1d8fe3c38f35 = $(`<div id="html_46f52b49ed27a87cd4ae1d8fe3c38f35" style="width: 100.0%; height: 100.0%;"><a href="https://www.titanicexperiencecobh.ie/" target="_blank">Cobh</a></div>`)[0];
+            popup_4af6ea94038b63112c86dc95a1dcd4d3.setContent(html_46f52b49ed27a87cd4ae1d8fe3c38f35);
+        
+
+        marker_1256f238dc2016386d742973c042de21.bindPopup(popup_4af6ea94038b63112c86dc95a1dcd4d3)
+        ;
+
+        
+    
+    
+            marker_1256f238dc2016386d742973c042de21.bindTooltip(
+                `<div>
+                     Cobh (Day 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20cb7aeb63204ec11fddeb43371fc554 = L.marker(
+                [52.513, -7.2053],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_fc6d0ee4c34aa0725c4851813649b3b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_20cb7aeb63204ec11fddeb43371fc554.setIcon(icon_fc6d0ee4c34aa0725c4851813649b3b8);
+        
+    
+        var popup_6f435f8b63d280d30c9a17209cce755d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23d8f47b2fac49e01d2d093bbaddfb92 = $(`<div id="html_23d8f47b2fac49e01d2d093bbaddfb92" style="width: 100.0%; height: 100.0%;"><a href="https://www.mountjuliet.ie/" target="_blank">Mount Juliet Estate</a></div>`)[0];
+            popup_6f435f8b63d280d30c9a17209cce755d.setContent(html_23d8f47b2fac49e01d2d093bbaddfb92);
+        
+
+        marker_20cb7aeb63204ec11fddeb43371fc554.bindPopup(popup_6f435f8b63d280d30c9a17209cce755d)
+        ;
+
+        
+    
+    
+            marker_20cb7aeb63204ec11fddeb43371fc554.bindTooltip(
+                `<div>
+                     Mount Juliet Estate (Day 3)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b51fff64d6f0942043c487334873f46 = L.marker(
+                [52.52, -7.8903],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_dc6b59ecb94af298b6062193f41c05f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b51fff64d6f0942043c487334873f46.setIcon(icon_dc6b59ecb94af298b6062193f41c05f2);
+        
+    
+        var popup_a6cfd3f079a276c49a6e4fd7eb961034 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_022daa4ec932ba5fc66ac7a612fee3ad = $(`<div id="html_022daa4ec932ba5fc66ac7a612fee3ad" style="width: 100.0%; height: 100.0%;"><a href="https://heritageireland.ie/places-to-visit/rock-of-cashel/" target="_blank">Rock of Cashel</a></div>`)[0];
+            popup_a6cfd3f079a276c49a6e4fd7eb961034.setContent(html_022daa4ec932ba5fc66ac7a612fee3ad);
+        
+
+        marker_6b51fff64d6f0942043c487334873f46.bindPopup(popup_a6cfd3f079a276c49a6e4fd7eb961034)
+        ;
+
+        
+    
+    
+            marker_6b51fff64d6f0942043c487334873f46.bindTooltip(
+                `<div>
+                     Rock of Cashel (Day 4)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b7cebf8ea59f141003d3943386cc0a2 = L.marker(
+                [52.0599, -9.5045],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_7e3dcb91fc1106295feebaf750b7d223 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b7cebf8ea59f141003d3943386cc0a2.setIcon(icon_7e3dcb91fc1106295feebaf750b7d223);
+        
+    
+        var popup_90d6f882da5adddac29d0e91e910586b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a666c8e0f7b46d86e2206b11308c0812 = $(`<div id="html_a666c8e0f7b46d86e2206b11308c0812" style="width: 100.0%; height: 100.0%;"><a href="https://www.killarney.ie/" target="_blank">Killarney</a></div>`)[0];
+            popup_90d6f882da5adddac29d0e91e910586b.setContent(html_a666c8e0f7b46d86e2206b11308c0812);
+        
+
+        marker_2b7cebf8ea59f141003d3943386cc0a2.bindPopup(popup_90d6f882da5adddac29d0e91e910586b)
+        ;
+
+        
+    
+    
+            marker_2b7cebf8ea59f141003d3943386cc0a2.bindTooltip(
+                `<div>
+                     Killarney (Day 4)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ce3c106acc7445a27aa74e11e79331b = L.marker(
+                [52.0179, -9.5012],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_02239f2bf690e05e47c340acaf541233 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7ce3c106acc7445a27aa74e11e79331b.setIcon(icon_02239f2bf690e05e47c340acaf541233);
+        
+    
+        var popup_1c8148b7a8a3db7fe7fd6f3bc42a8784 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee63d3f9841fa8af2b6b7428fa56d7b4 = $(`<div id="html_ee63d3f9841fa8af2b6b7428fa56d7b4" style="width: 100.0%; height: 100.0%;"><a href="https://www.killarneynationalpark.ie/visit-us/muckross-house-gardens-traditional-farms/" target="_blank">Muckross House</a></div>`)[0];
+            popup_1c8148b7a8a3db7fe7fd6f3bc42a8784.setContent(html_ee63d3f9841fa8af2b6b7428fa56d7b4);
+        
+
+        marker_7ce3c106acc7445a27aa74e11e79331b.bindPopup(popup_1c8148b7a8a3db7fe7fd6f3bc42a8784)
+        ;
+
+        
+    
+    
+            marker_7ce3c106acc7445a27aa74e11e79331b.bindTooltip(
+                `<div>
+                     Muckross House (Day 4)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01a3cd31e52846d47fca0ece0cdf2398 = L.marker(
+                [51.9481, -9.9178],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_be260af6df70d14d56f71db613a1db22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_01a3cd31e52846d47fca0ece0cdf2398.setIcon(icon_be260af6df70d14d56f71db613a1db22);
+        
+    
+        var popup_d7ea110456d71a6933906985929cdea7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ab1f1fec2bcd70624e2a21317354099 = $(`<div id="html_8ab1f1fec2bcd70624e2a21317354099" style="width: 100.0%; height: 100.0%;"><a href="https://www.ringofkerrytourism.com/" target="_blank">Ring of Kerry (Start)</a></div>`)[0];
+            popup_d7ea110456d71a6933906985929cdea7.setContent(html_8ab1f1fec2bcd70624e2a21317354099);
+        
+
+        marker_01a3cd31e52846d47fca0ece0cdf2398.bindPopup(popup_d7ea110456d71a6933906985929cdea7)
+        ;
+
+        
+    
+    
+            marker_01a3cd31e52846d47fca0ece0cdf2398.bindTooltip(
+                `<div>
+                     Ring of Kerry (Start) (Day 5)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_83c8802aac15d9c2b4bc0b220db29a70 = L.marker(
+                [52.14, -10.27],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_f069a62b52d7fb436603f42f5ab2823d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_83c8802aac15d9c2b4bc0b220db29a70.setIcon(icon_f069a62b52d7fb436603f42f5ab2823d);
+        
+    
+        var popup_9141a96be296582b6a8979826af310dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b12849b1057359920a70822daa29a68a = $(`<div id="html_b12849b1057359920a70822daa29a68a" style="width: 100.0%; height: 100.0%;"><a href="https://www.dingle-peninsula.ie/" target="_blank">Dingle</a></div>`)[0];
+            popup_9141a96be296582b6a8979826af310dc.setContent(html_b12849b1057359920a70822daa29a68a);
+        
+
+        marker_83c8802aac15d9c2b4bc0b220db29a70.bindPopup(popup_9141a96be296582b6a8979826af310dc)
+        ;
+
+        
+    
+    
+            marker_83c8802aac15d9c2b4bc0b220db29a70.bindTooltip(
+                `<div>
+                     Dingle (Day 5)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_90bdeba030b472086f99df915a924401 = L.marker(
+                [52.9715, -9.4309],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_dea896775e57d9d149e0a8eb27efd517 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_90bdeba030b472086f99df915a924401.setIcon(icon_dea896775e57d9d149e0a8eb27efd517);
+        
+    
+        var popup_85b4e41798fb8fd3bb2440a33194e969 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_96152b07b6fc74806e7223da95020c11 = $(`<div id="html_96152b07b6fc74806e7223da95020c11" style="width: 100.0%; height: 100.0%;"><a href="https://www.cliffsofmoher.ie/" target="_blank">Cliffs of Moher</a></div>`)[0];
+            popup_85b4e41798fb8fd3bb2440a33194e969.setContent(html_96152b07b6fc74806e7223da95020c11);
+        
+
+        marker_90bdeba030b472086f99df915a924401.bindPopup(popup_85b4e41798fb8fd3bb2440a33194e969)
+        ;
+
+        
+    
+    
+            marker_90bdeba030b472086f99df915a924401.bindTooltip(
+                `<div>
+                     Cliffs of Moher (Day 6)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1de2489dba822c5e485c76a08e61a0c = L.marker(
+                [53.0289, -9.0032],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_b76bd70a15bb4df67cbc389cc1f52a7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_e1de2489dba822c5e485c76a08e61a0c.setIcon(icon_b76bd70a15bb4df67cbc389cc1f52a7b);
+        
+    
+        var popup_96e7c36cbabcb28fe59e595ef2166eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89561ea35dcb09f307d75a7bd2d4b52d = $(`<div id="html_89561ea35dcb09f307d75a7bd2d4b52d" style="width: 100.0%; height: 100.0%;"><a href="https://www.burrennationalpark.ie/" target="_blank">Burren National Park</a></div>`)[0];
+            popup_96e7c36cbabcb28fe59e595ef2166eb8.setContent(html_89561ea35dcb09f307d75a7bd2d4b52d);
+        
+
+        marker_e1de2489dba822c5e485c76a08e61a0c.bindPopup(popup_96e7c36cbabcb28fe59e595ef2166eb8)
+        ;
+
+        
+    
+    
+            marker_e1de2489dba822c5e485c76a08e61a0c.bindTooltip(
+                `<div>
+                     Burren National Park (Day 6)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6dc6bfc052637b35a7a62e34f524fe96 = L.marker(
+                [53.2707, -9.0568],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_8c5d8d3d47a43391c864bd6a0e124322 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_6dc6bfc052637b35a7a62e34f524fe96.setIcon(icon_8c5d8d3d47a43391c864bd6a0e124322);
+        
+    
+        var popup_512c2097ee924a31a6ab0429c2bcb706 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06c913e2f770402f1580a973558f1696 = $(`<div id="html_06c913e2f770402f1580a973558f1696" style="width: 100.0%; height: 100.0%;"><a href="https://www.galwaytourism.ie/" target="_blank">Galway</a></div>`)[0];
+            popup_512c2097ee924a31a6ab0429c2bcb706.setContent(html_06c913e2f770402f1580a973558f1696);
+        
+
+        marker_6dc6bfc052637b35a7a62e34f524fe96.bindPopup(popup_512c2097ee924a31a6ab0429c2bcb706)
+        ;
+
+        
+    
+    
+            marker_6dc6bfc052637b35a7a62e34f524fe96.bindTooltip(
+                `<div>
+                     Galway (Day 7)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c37929dd7029ad847e7fc1b84984036 = L.marker(
+                [53.274, -7.4905],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_9e7c22f4f6cdce29e8071037199ba703 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c37929dd7029ad847e7fc1b84984036.setIcon(icon_9e7c22f4f6cdce29e8071037199ba703);
+        
+    
+        var popup_7116f77684a7477f0456407bfdb6daec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5434c0b9f7540c080f43d3612d6c902e = $(`<div id="html_5434c0b9f7540c080f43d3612d6c902e" style="width: 100.0%; height: 100.0%;"><a href="https://www.tullamoredew.com/en-gb/distillery/" target="_blank">Tullamore D.E.W. Distillery</a></div>`)[0];
+            popup_7116f77684a7477f0456407bfdb6daec.setContent(html_5434c0b9f7540c080f43d3612d6c902e);
+        
+
+        marker_1c37929dd7029ad847e7fc1b84984036.bindPopup(popup_7116f77684a7477f0456407bfdb6daec)
+        ;
+
+        
+    
+    
+            marker_1c37929dd7029ad847e7fc1b84984036.bindTooltip(
+                `<div>
+                     Tullamore D.E.W. Distillery (Day 7)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fb4d1c1b4a2fdd8de8df0aeb7a4d0e7c = L.marker(
+                [53.5547, -9.9455],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_b658a8ea51edf2c90a1ab1a8885c2e04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_fb4d1c1b4a2fdd8de8df0aeb7a4d0e7c.setIcon(icon_b658a8ea51edf2c90a1ab1a8885c2e04);
+        
+    
+        var popup_8c3ff589ab33e7c248a0343b91aa1a78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e70be3fe2f38a44468c50167eef6b53 = $(`<div id="html_2e70be3fe2f38a44468c50167eef6b53" style="width: 100.0%; height: 100.0%;"><a href="https://www.connemaranationalpark.ie/" target="_blank">Connemara National Park</a></div>`)[0];
+            popup_8c3ff589ab33e7c248a0343b91aa1a78.setContent(html_2e70be3fe2f38a44468c50167eef6b53);
+        
+
+        marker_fb4d1c1b4a2fdd8de8df0aeb7a4d0e7c.bindPopup(popup_8c3ff589ab33e7c248a0343b91aa1a78)
+        ;
+
+        
+    
+    
+            marker_fb4d1c1b4a2fdd8de8df0aeb7a4d0e7c.bindTooltip(
+                `<div>
+                     Connemara National Park (Day 7)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0606ea1b46d49fe981c3a27f72683f10 = L.marker(
+                [53.3419, -6.2869],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_dce46a7e4464d402d3692fc61692f3b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_0606ea1b46d49fe981c3a27f72683f10.setIcon(icon_dce46a7e4464d402d3692fc61692f3b0);
+        
+    
+        var popup_9914f8e950f6f131b6135d256d3acd0b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f9da6f4e53f1fc01a97d6907a6a2bd0e = $(`<div id="html_f9da6f4e53f1fc01a97d6907a6a2bd0e" style="width: 100.0%; height: 100.0%;"><a href="https://www.guinness-storehouse.com/en" target="_blank">Guinness Storehouse</a></div>`)[0];
+            popup_9914f8e950f6f131b6135d256d3acd0b.setContent(html_f9da6f4e53f1fc01a97d6907a6a2bd0e);
+        
+
+        marker_0606ea1b46d49fe981c3a27f72683f10.bindPopup(popup_9914f8e950f6f131b6135d256d3acd0b)
+        ;
+
+        
+    
+    
+            marker_0606ea1b46d49fe981c3a27f72683f10.bindTooltip(
+                `<div>
+                     Guinness Storehouse (Day 8)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_382772a1d0eff2da300217216650caeb = L.marker(
+                [53.3498, -6.2783],
+                {}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+    
+            var icon_2155e0e9f27ea1ebcf1e31bb84936537 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_382772a1d0eff2da300217216650caeb.setIcon(icon_2155e0e9f27ea1ebcf1e31bb84936537);
+        
+    
+        var popup_72bec009e687a61d1f2eac8acb9287b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c3b8bf242e5b76c04adad88ad16dcd7 = $(`<div id="html_7c3b8bf242e5b76c04adad88ad16dcd7" style="width: 100.0%; height: 100.0%;"><a href="https://www.jamesonwhiskey.com/en-us/visit-us/jameson-distillery-bow-st/" target="_blank">Jameson Distillery</a></div>`)[0];
+            popup_72bec009e687a61d1f2eac8acb9287b4.setContent(html_7c3b8bf242e5b76c04adad88ad16dcd7);
+        
+
+        marker_382772a1d0eff2da300217216650caeb.bindPopup(popup_72bec009e687a61d1f2eac8acb9287b4)
+        ;
+
+        
+    
+    
+            marker_382772a1d0eff2da300217216650caeb.bindTooltip(
+                `<div>
+                     Jameson Distillery (Day 8)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4c8ee2d018476b3edfa4fe50e3a0a4cb = L.polyline(
+                [[53.3331, -6.2489], [52.6541, -7.2448], [51.85, -8.2945], [52.6541, -7.2448], [52.52, -7.8903], [52.0599, -9.5045], [51.9481, -9.9178], [52.0599, -9.5045], [52.14, -10.27], [52.0599, -9.5045], [52.9715, -9.4309], [53.0289, -9.0032], [53.2707, -9.0568], [53.3331, -6.2489]],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_5f2693c622fdf1f6afa7ec56c15dd056);
+        
+</script>
+</html>
